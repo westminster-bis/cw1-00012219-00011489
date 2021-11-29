@@ -31,9 +31,26 @@ class Student(User):
         self.submissionTime = submissionTime
 
 
+def checkCode(code):
+    if code == Teacher.teacherCode:
+        return True
+
+    return False
+
+
+def checkTeacher(username):
+    for teacher in teachers:
+        if teacher.name == username:
+            return True
+
+    return False
+
+# teacher
+
 class Teacher(User):
     teacherCode = "univer_code2021@wiut"
 
-    def __init__(self, name, password, isteacher, username):
-        super().__init__(self, name, password, True)
+    def __init__(self, name, password, username, module_Name):
+        super().__init__(self, name, password)
         self.username = username
+        self.module_Name = module_Name
