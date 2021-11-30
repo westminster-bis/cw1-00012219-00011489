@@ -7,9 +7,16 @@ class Module:
 
     def __init__(self, name):
         self.name = name
-        self.deadline = 0
+        self.deadlineDate = 0
+        self.deadlineTime = 0
 
 
+def setDeadline(moduleObj, deadlineDate, deadlineTime):
+    moduleObj.deadlineDate = deadlineDate
+    moduleObj.deadlineTime = deadlineTime
+
+
+# modules that level 4 students have
 module1 = Module("Computer Science Fundamentals")
 modules.append(module1)
 module2 = Module("Fundamentals of Programming")
