@@ -1,9 +1,7 @@
 class User:
-    def __init__(self, full_name, username, password):
+    def __init__(self, full_name, username, password, isTeacher):
         self.fullName = full_name
         self.username = username
         self.password = password
-
-
-user1 = User("husan", "bro", "123")
+        self.isTeacher = isTeacher
 

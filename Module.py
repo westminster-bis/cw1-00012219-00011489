@@ -16,6 +16,15 @@ def setDeadline(moduleObj, deadlineDate, deadlineTime):
     moduleObj.deadlineTime = deadlineTime
 
 
+def printModules():
+    ind = 1
+    print("---------------Available modules---------------")
+    for module in modules:
+        print("{}.{}".format(ind, module.name))
+        ind += 1
+    print("-----------------------------------------------")
+
+
 # modules that level 4 students have
 module1 = Module("Computer Science Fundamentals")
 modules.append(module1)
