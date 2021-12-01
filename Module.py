@@ -10,7 +10,6 @@ class Module:
         self.deadlineDate = 0
         self.deadlineTime = 0
 
-
 def setDeadline(moduleObj, deadlineDate, deadlineTime):
     moduleObj.deadlineDate = deadlineDate
     moduleObj.deadlineTime = deadlineTime
@@ -24,6 +23,12 @@ def printModules():
         ind += 1
     print("-----------------------------------------------")
 
+
+def getModule(moduleName):
+    for module in modules:
+        if module.name == moduleName:
+            return module
+    return None
 
 # modules that level 4 students have
 module1 = Module("Computer Science Fundamentals")

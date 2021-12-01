@@ -8,6 +8,13 @@ def addStudent(student):
     print("successfully completed")
 
 
+def checkStudent(studentID, password):
+    for student12 in studentsList:
+        if student12.username == studentID and student12.password == password:
+            return student12
+    return None
+
+
 def checkIDStatus(studentID):
     if studentID[0:3] == "000":
         if len(studentID) == 8:
@@ -32,3 +39,7 @@ class StudentClass(User):
     # OVERALL MARK SETTER
     def overall_Mark(self, overallMark):
         self.overallMark = overallMark
+
+
+student1 = StudentClass("Husan Xolmatov", "00011489", "1234")
+studentsList.append(student1)

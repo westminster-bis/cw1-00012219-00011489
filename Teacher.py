@@ -4,6 +4,13 @@ import Teacher
 teachersList = []
 
 
+def checkTeacherUsername(username, password):
+    for teacher in teachersList:
+        if teacher.username == username and teacher.password == password:
+            return teacher
+    return None
+
+
 def checkTeacher(fullName):
     for teacher in teachersList:
         if teacher.fullName == fullName:
