@@ -90,7 +90,8 @@ def teacherMenu(teacher):
         elif option == 0:
             break
 
-#STUDENT MENU
+
+# STUDENT MENU
 def studentMenu(student):
     while True:
         print("1.Enroll course\t 2.My Marks\t 0.Exit")
@@ -98,12 +99,16 @@ def studentMenu(student):
         if option == 1:
             Module.printModules()
             option2 = int(input("choose option: "))
-            module = Module.modules[option2-1]
+            module = Module.modules[option2 - 1]
+            pass
+        elif option == 2:
+            pass
+        elif option == 0:
+            break
 
 
 def moduleSubmissionMenu(student, module):
     pass
-
 
 
 def mainMenu():
