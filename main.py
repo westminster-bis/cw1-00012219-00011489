@@ -5,6 +5,7 @@ import Module
 import Student
 from Student import StudentClass
 
+print("quvonch")
 
 # LOGIN MENU
 def loginMenu():
